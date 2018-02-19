@@ -7,7 +7,7 @@ In addition to turning LEDs on and off, it is also possible to control the brigh
 
 Components
 ----------
-
+Inside your blue ESD box you'll find a green Protoskin with a 100 Ohm resistor and a blue LED soldered to. This additional hardware fits right onto your pyboard. All the components needed, are also in the box not populated. To make things easier one skin is soldered up for you already.
 You will need:
 
 - Standard 5 or 3 mm LED
@@ -18,7 +18,7 @@ You will need:
 Connecting Things Up
 --------------------
 
-For this tutorial, we will use the ``X1`` pin. Connect one end of the resistor to ``X1``, and the other end to the **anode** of the LED, which is the longer leg. Connect the **cathode** of the LED to ground.
+For this tutorial, we will use the ``X1`` pin. Connect one end of the resistor to ``X1``, and the other end to the **anode** of the LED, which is the longer leg. Connect the **cathode** of the LED to ground. You can look at the not populated LED and see the different leg sizes of the LED.
 
 .. image:: img/fading_leds_breadboard_fritzing.png
 
