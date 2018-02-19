@@ -10,7 +10,7 @@ This tutorial shows how to get started using the LCD160CR skin.
 For detailed documentation of the driver for the display see the
 :mod:`lcd160cr` module.
 
-Plugging in the display
+Plugging in the display on top of a pyboard
 -----------------------
 
 The display can be plugged directly into a pyboard (all pyboard versions
@@ -18,6 +18,15 @@ are supported).  You plug the display onto the top of the pyboard either
 in the X or Y positions.  The display should cover half of the pyboard.
 See the picture above for how to achieve this; the left half of the picture
 shows the X position, and the right half shows the Y position.
+
+
+Plugging in the display next to a pyboard
+-----------------------
+
+The display fits right into a LCD-Housing and can be plugged right next to a pyboard.
+XY is the position for the right-side and uses: "X4" for Power, "Y" for connecting via I2C and(pwr=Pin("X4"), i2c=I2C("Y"), spi=SPI("X")). It is also possible to plug in the Display on the left side of a pyboard and use the following code to connect it::
+     >>> lcd = lcd160cr.LCD160CR('YX') #for connecting the Display to the left side
+     >>> lcd = lcd160cr.LCD160CR('XY') #for connecting the Display to the right side
 
 Getting the driver
 ------------------
@@ -103,6 +112,17 @@ This will return a 3-tuple, with the first entry being 0 or 1 depending on wheth
 there is currently anything touching the screen (1 if there is), and the second and
 third entries in the tuple being the x and y coordinates of the current (or most
 recent) touch.
+
+Playing around with setup commands
+----------------------
+Let's try to turn off the Display. Therefore you can use the LCD160CR.set_power(on) comand. The given value of on:0 or False will turn the display off. Which value will turn it on again?
+Now that we switched on the display, we can set the orientation with the following parameters: PORTRAIT, LANDSCAPE, PORTRAIT_UPSIDEDOWN and LANDSCAPE_UPSIDEDOWN. You can use LCD160CR.set_orient(orient) for this task.
+
+Using the RGB Method for setting colour of the font
+----------------------
+The static LCD160CR.set_font(font, scale=0, bold=0, trans=0, scroll=0) can be used to set the font colour. 
+
+Return a 16-bit integer representing the given rgb color values. The 16-bit value can be used to set the font color (see LCD160CR.set_text_color()) pen color (see LCD160CR.set_pen()) and draw individual pixels.
 
 Directing the MicroPython output to the display
 -----------------------------------------------
