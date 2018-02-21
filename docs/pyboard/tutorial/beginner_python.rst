@@ -1,8 +1,8 @@
 Hello, pyboard!
 --------
-MicroPython is a reimplementation of the Python 3.x programing language.
+MicroPython is a reimplementation of the Python 3.x programing language. Most of your Python programming knowledge is directly useable in MicroPython.
 
-After logging into the python promt you can run your first lines of code::
+After logging into the python promt on your pyboard, you can directly run your first lines of code::
 
 >>> print("Hello, MicroPython pyboard!")
 
@@ -25,13 +25,13 @@ To define a floating point number::
 
 >>> onefloat = 4.0
 >>> print(onefloat)
->>> onefloat=float(7)
+>>> onefloat=float(4)
 >>> print(onefloat)
 
 Will return::
 
->>> 7.0
->>> 7.0
+>>> 4.0
+>>> 4.0
 
 
 
