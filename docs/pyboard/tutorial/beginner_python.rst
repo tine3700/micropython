@@ -32,26 +32,25 @@ Will return::
   >>> 4.0
   >>> 4.0
   
-Strings::
+Strings
 --------
-  mystring = 'hello'
-  print(mystring)
-  mystring = "hello"
-  print(mystring)
-  
+::
+    mystring = 'hello'
+    print(mystring)
+    mystring = "hello"
+    print(mystring)
   
 Simple operators can be executed on numbers and strings
 --------
-  ::
-  one = 1
-  two = 2
-  three = one + two
-  print(three)
-
-  hello = "hello"
-  world = "world"
-  helloworld = hello + " " + world
-  print(helloworld)
+::
+    one = 1
+    two = 2
+    three = one + two
+    print(three)
+    hello = "hello"
+    world = "world"
+    helloworld = hello + " " + world
+    print(helloworld)
 
 Excercise
 ---------
