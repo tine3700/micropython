@@ -32,7 +32,7 @@ Will return::
   >>> 4.0
   >>> 4.0
   
-Strings
+Strings::
 --------
   mystring = 'hello'
   print(mystring)
@@ -40,33 +40,33 @@ Strings
   print(mystring)
   
   
-Simple operators can be executed on numbers and strings:
+Simple operators can be executed on numbers and strings::
 --------
   
-one = 1
-two = 2
-three = one + two
-print(three)
+  one = 1
+  two = 2
+  three = one + two
+  print(three)
 
-hello = "hello"
-world = "world"
-helloworld = hello + " " + world
-print(helloworld)
+  hello = "hello"
+  world = "world"
+  helloworld = hello + " " + world
+  print(helloworld)
 
 EXcercise::
 ---------
 
-# change this code
-mystring = None
-myfloat = None
-myint = None
+  # change this code
+  mystring = None
+  myfloat = None
+  myint = None
 
-# testing code
-if mystring == "hello":
+  # testing code
+  if mystring == "hello":
     print("String: %s" % mystring)
-if isinstance(myfloat, float) and myfloat == 10.0:
+  if isinstance(myfloat, float) and myfloat == 10.0:
     print("Float: %f" % myfloat)
-if isinstance(myint, int) and myint == 20:
+  if isinstance(myint, int) and myint == 20:
     print("Integer: %d" % myint)
 
 
