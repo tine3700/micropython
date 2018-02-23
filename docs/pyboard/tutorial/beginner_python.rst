@@ -40,9 +40,9 @@ Strings::
   print(mystring)
   
   
-Simple operators can be executed on numbers and strings::
+Simple operators can be executed on numbers and strings
 --------
-  
+  ::
   one = 1
   two = 2
   three = one + two
@@ -53,9 +53,9 @@ Simple operators can be executed on numbers and strings::
   helloworld = hello + " " + world
   print(helloworld)
 
-EXcercise::
+Excercise
 ---------
-
+::
   # change this code
   mystring = None
   myfloat = None
