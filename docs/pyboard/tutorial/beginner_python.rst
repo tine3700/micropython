@@ -1,6 +1,6 @@
 Hello, pyboard!
 --------
-MicroPython is a reimplementation of the Python 3.x programing language. Most of your Python programming knowledge is directly useable in MicroPython.
+MicroPython is a reimplementation of the Python 3.x programing language. Most of your Python programming knowledge is directly useable in MicroPython. Please see the differences here: 
 
 After logging into the python promt on your pyboard, you can directly run your first lines of code::
 
