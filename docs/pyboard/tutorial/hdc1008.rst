@@ -17,3 +17,8 @@ The first step would to direct the REPL onto the screen directly. Can you find t
 This doesn't look very nice. We would like draw a box on the screen where the Temperature appears.
 
 Congratulations! You have designed your own Temperature sensor.
+
+Making it work with the Huzzah Feather board
+------------------------------
+The test code for your HDC1008 is also working with the Adafruit Huzzah board and an ESP8266. Please try to wire your sensor
+to the board and see, if you can get it working.
