@@ -24,7 +24,7 @@ Plugging in the display next to a pyboard
 -----------------------
 
 The display fits right into a LCD-Housing and can be plugged right next to a pyboard.
-XY is the position for the right-side and uses: "X4" for Power, "Y" for connecting via I2C and(pwr=Pin("X4"), i2c=I2C("Y"), spi=SPI("X")). It is also possible to plug in the Display on the left side of a pyboard and use the following code to connect it::
+"XY" is the position for the right-side and uses: "X4" for Power, "Y" for connecting via I2C and(pwr=Pin("X4"), i2c=I2C("Y"), spi=SPI("X")). It is also possible to plug in the Display on the left side of a pyboard and use the following code to connect it::
      >>> lcd = lcd160cr.LCD160CR('YX') #for connecting the Display to the left side
      >>> lcd = lcd160cr.LCD160CR('XY') #for connecting the Display to the right side
 
