@@ -6,8 +6,7 @@ find more detailed information in the datasheet:
 The Breakout board from Watterott has the pull-up resistors already designed into the breakout board. Which means you can wire the
 sensor directly to your pyboard. In the first example the I2C on Pins 'X9' and 'X10' where used to run the test code.
 
-Have a look at the datasheet of the pyboard lite with accelerometer. Can you adjust the test code in the hdc1008test.py and use it with
-the other I2C connection. On which Pins is it?
+Have a look at the datasheet of the pyboard lite with accelerometer. Can you adjust the test code in the hdc1008test.py and use it with the other I2C? On which Pins is it?
 
 Showing the Temperature and Humidity on the LCD160CR
 -----------------------------
