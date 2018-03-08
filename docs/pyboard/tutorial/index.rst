@@ -12,17 +12,17 @@ the tutorial through in the order below.
    :maxdepth: 1
    :numbered:
 
-   intro.rst
-   script.rst
-   repl.rst
-   leds.rst
-   switch.rst
-   accel.rst
-   reset.rst
-   usb_mouse.rst
-   timer.rst
-   assembler.rst
-   power_ctrl.rst
+   1_intro.rst
+   2_script.rst
+   3_repl.rst
+   4_leds.rst
+   5_switch.rst
+   6_accel.rst
+   7_reset.rst
+   8_usb_mouse.rst
+   9_timer.rst
+   10_assembler.rst
+   11_power_ctrl.rst
 
 Tutorials requiring extra components
 ------------------------------------
@@ -31,11 +31,9 @@ Tutorials requiring extra components
    :maxdepth: 1
    :numbered:
 
-   servo.rst
-   fading_led.rst
-   lcd_skin.rst
-   amp_skin.rst
-   lcd160cr_skin.rst
+   20_servo.rst
+   21_fading_led.rst
+   22_lcd160cr_skin.rst
 
 Tips, tricks and useful things to know
 --------------------------------------
