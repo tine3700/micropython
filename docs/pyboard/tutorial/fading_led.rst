@@ -7,7 +7,7 @@ In addition to turning LEDs on and off, it is also possible to control the brigh
 
 Components
 ----------
-Inside your blue ESD box you'll find a green Protoskin with a 100 Ohm resistor and a blue LED soldered to. This additional hardware fits right onto your pyboard. All the components needed, are also in the box not populated. To make things easier one skin is soldered up for you already.
+Inside your blue ESD box you'll find a 100 Ohm resistor and a blue LED soldered together. If you compare the setup to the schematics in picture 1 You'll find that this is made up simpler to get used to using first external components that you can connect to your pyboard
 You will need:
 
 - Standard 5 or 3 mm LED
