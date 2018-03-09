@@ -7,8 +7,8 @@ In addition to turning LEDs on and off, it is also possible to control the brigh
 
 Components
 ----------
-Inside your blue ESD box you'll find a 100 Ohm resistor and a blue LED soldered together. If you compare the setup to the schematics in picture 1 You'll find that this is made up simpler to get used to using first external components that you can connect to your pyboard
-You will need:
+Inside your blue ESD box you'll find a 100 Ohm resistor and a blue LED soldered together. If you compare the setup to the schematics in :ref:`img/fading_leds_breadboard_fritzing.png` You'll find that this is made up simpler to get used to using first external components that you can connect to your pyboard. But if you want to try this example with a breadboard again,
+you will need:
 
 - Standard 5 or 3 mm LED
 - 100 Ohm resistor
@@ -76,6 +76,10 @@ If we want to have a breathing effect, where the LED fades from dim to bright th
       elif cur_width < min_width:
         cur_width = min_width
         wstep *= -1
+        
+First Exercise
+----------------
+How would you change the code, if you want to use channel 2 for this exercise? On which Pins is Channel 2?
 
 Advanced Exercise
 -----------------
