@@ -52,7 +52,7 @@ It will then print some brief instructions.  You will need to know which
 position your display is connected to (X or Y) and then you can run (assuming
 you have the display on position X)::
 
-    >>> test_all('X')
+    >>> lcd160cr_test.test_all('X')
 
 Drawing some graphics
 ---------------------
@@ -71,6 +71,8 @@ To erase the screen and draw a line, try::
     >>> lcd.set_pen(lcd.rgb(255, 0, 0), lcd.rgb(64, 64, 128))
     >>> lcd.erase()
     >>> lcd.line(10, 10, 50, 80)
+    
+Task: How would you change the colour of the line? How you place the line at another place?
 
 The next example draws random rectangles on the screen.  You can copy-and-paste it
 into the MicroPython prompt by first pressing "Ctrl-E" at the prompt, then "Ctrl-D"
@@ -82,6 +84,8 @@ once you have pasted the text. ::
         bg = lcd.rgb(randint(0, 128), randint(0, 128), randint(0, 128))
         lcd.set_pen(fg, bg)
         lcd.rect(randint(0, lcd.w), randint(0, lcd.h), randint(10, 40), randint(10, 40))
+        
+Task: How would you draw two rectangles on the screen? Try to give them different colours.
 
 Using the touch sensor
 ----------------------
