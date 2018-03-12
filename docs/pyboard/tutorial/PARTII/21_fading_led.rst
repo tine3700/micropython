@@ -26,6 +26,7 @@ Code
 ----
 
 By examining the http://docs.micropython.org/en/latest/pyboard/pyboard/quickref.html#quickref , we see that ``X1`` is connected to channel 1 of timer 5 (``TIM5 CH1``). Therefore we will first create a ``Timer`` object for timer 5, then create a ``TimerChannel`` object for channel 1
+
 .. code-block:: python
 
     from pyb import Timer
