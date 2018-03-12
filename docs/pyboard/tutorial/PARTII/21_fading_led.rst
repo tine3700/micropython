@@ -42,7 +42,7 @@ For switching on the LED on `X1`::
 
 
 To achieve the fading effect shown at the beginning of this tutorial, we want to set the pulse-width to a small value, then slowly increase the pulse-width to brighten the LED, and start over when we reach some maximum brightness::
-
+```python
     # maximum and minimum pulse-width, which corresponds to maximum
     # and minimum brightness
     max_width = 200000
@@ -63,6 +63,7 @@ To achieve the fading effect shown at the beginning of this tutorial, we want to
     
       if cur_width > max_width:
         cur_width = min_width
+```
 
 Breathing Effect
 ----------------
