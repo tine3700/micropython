@@ -37,7 +37,7 @@ By examining the http://docs.micropython.org/en/latest/pyboard/pyboard/quickref.
 Brightness of the LED in PWM is controlled by controlling the pulse-width, that is the amount of time the LED is on every cycle. With a timer frequency of 100 Hz, each cycle takes 0.01 second, or 10 ms.
 
 For switching on the LED on `X1`::
-pin_x1=pyb.Pin('X1', pyb.Pin.IN, pyb.Pin.PULL_UP)
+    >>> pin_x1=pyb.Pin('X1', pyb.Pin.IN, pyb.Pin.PULL_UP)
 
 
 To achieve the fading effect shown at the beginning of this tutorial, we want to set the pulse-width to a small value, then slowly increase the pulse-width to brighten the LED, and start over when we reach some maximum brightness::
