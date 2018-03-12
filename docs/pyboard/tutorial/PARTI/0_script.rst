@@ -64,7 +64,9 @@ Editing ``main.py``
 Now we are going to write our Python program, so open the ``main.py``
 file in a text editor.  On Windows you can use notepad, or any other editor.
 On Mac and Linux, use your favourite text editor.  With the file open you will
-see it contains 1 line::
+see it contains 1 line
+
+.. code-block:: python
 
     # main.py -- put your code here!
 
@@ -72,7 +74,9 @@ This line starts with a # character, which means that it is a *comment*.  Such
 lines will not do anything, and are there for you to write notes about your
 program.
 
-Let's add 2 lines to this ``main.py`` file, to make it look like this::
+Let's add 2 lines to this ``main.py`` file, to make it look like this
+
+.. code-block:: python
 
     # main.py -- put your code here!
     import pyb
