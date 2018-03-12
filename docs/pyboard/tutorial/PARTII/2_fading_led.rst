@@ -18,9 +18,9 @@ you will need:
 Connecting Things Up
 --------------------
 
-For this tutorial, we will use the ``X1`` pin. Connect one end of the resistor to ``X1``, and the other end to the **anode** of the LED, which is the longer leg. Connect the **cathode** of the LED to ground. You can look at the not populated LED and see the different leg sizes of the LED.
+For this tutorial, we will use the ``X1`` pin. Connect one end of the resistor to ``X1``, and the other end to the **anode** of the LED, which is the longer leg. Connect the **cathode** of the LED to ground. You can look at the LED and see the different leg sizes of the LED.
 
-.. image:: /img/fading_leds_breadboard_fritzing.png
+.. image:: /docs/pyboard/tutorial/img/fading_leds_breadboard_fritzing.png
 
 Code
 ----
