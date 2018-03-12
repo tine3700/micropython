@@ -20,12 +20,12 @@ Connecting Things Up
 
 For this tutorial, we will use the ``X1`` pin. Connect one end of the resistor to ``X1``, and the other end to the **anode** of the LED, which is the longer leg. Connect the **cathode** of the LED to ground. You can look at the not populated LED and see the different leg sizes of the LED.
 
-.. image:: micropython/docs/pyboard/tutorial/img/fading_leds_breadboard_fritzing.png
+.. image:: /img/fading_leds_breadboard_fritzing.png
 
 Code
 ----
 
-By examining the http://docs.micropython.org/en/latest/pyboard/pyboard/quickref.html#quickref , we see that ``X1`` is connected to channel 1 of timer 5 (``TIM5 CH1``). Therefore we will first create a ``Timer`` object for timer 5, then create a ``TimerChannel`` object for channel 1
+By examining the `Pinlayout for the pyboard lite <http://docs.micropython.org/en/latest/pyboard/pyboard/quickref.html#quickref>_ , we see that ``X1`` is connected to channel 1 of timer 5 (``TIM5 CH1``). Therefore we will first create a ``Timer`` object for timer 5, then create a ``TimerChannel`` object for channel 1
 
 .. code-block:: python
 
