@@ -8,7 +8,7 @@ These motors have 3 wires: ground, power and signal.  On the pyboard you
 can connect them in the bottom right corner, with the signal pin on the
 far right.  Pins X1, X2, X3 and X4 are the 4 dedicated servo signal pins.
 
-.. image:: img/pyboard_servo.jpg
+.. image:: /docs/pyboard/tutorial/img/pyboard_servo.jpg
 
 In this picture there are male-male double adaptors to connect the servos
 to the header pins on the pyboard.
