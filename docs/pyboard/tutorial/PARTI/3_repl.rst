@@ -63,7 +63,9 @@ Now let's try running some MicroPython code directly on the pyboard.
 
 With your serial program open (PuTTY, screen, picocom, etc) you may see a blank
 screen with a flashing cursor.  Press Enter and you should be presented with a
-MicroPython prompt, i.e. ``>>>``.  Let's make sure it is working with the obligatory test::
+MicroPython prompt, i.e. ``>>>``.  Let's make sure it is working with the obligatory test
+
+.. code-block:: python
 
     >>> print("hello pyboard!")
     hello pyboard!
@@ -78,7 +80,11 @@ If you already know some python you can now try some basic commands here.
 If any of this is not working you can try either a hard reset or a soft reset;
 see below.
 
-Go ahead and try typing in some other commands.  For example::
+Go ahead and try typing in some other commands.  For example
+
+
+
+
 
     >>> pyb.LED(1).on()
     >>> pyb.LED(2).on()
@@ -93,7 +99,10 @@ Resetting the board
 -------------------
 
 If something goes wrong, you can reset the board in two ways. The first is to press CTRL-D
-at the MicroPython prompt, which performs a soft reset.  You will see a message something like ::
+at the MicroPython prompt, which performs a soft reset.  You will see a message something like
+
+
+
 
     >>> 
     PYB: sync filesystems
