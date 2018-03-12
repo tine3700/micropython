@@ -31,7 +31,9 @@ can also find the driver in the GitHub repository
 board, into a directory that is searched by import (usually the lib/
 directory).
 
-Once you have the driver installed you need to import it to use it::
+Once you have the driver installed you need to import it to use it
+
+.. code-block:: python
 
     import lcd160cr
 
@@ -44,13 +46,17 @@ LCD.  This test program is included in recent versions of the pyboard firmware
 and is also available on GitHub
 `here <https://github.com/micropython/micropython/blob/master/drivers/display/lcd160cr_test.py>`__.
 
-To run the test from the MicroPython prompt do::
+To run the test from the MicroPython prompt do
+
+.. code-block:: python
 
     >>> import lcd160cr_test
 
 It will then print some brief instructions.  You will need to know which
 position your display is connected to (X or Y) and then you can run (assuming
-you have the display on position X)::
+you have the display on position X)
+
+.. code-block:: python
 
     >>> lcd160cr_test.test_all('X')
 
@@ -58,7 +64,9 @@ Drawing some graphics
 ---------------------
 
 You must first create an LCD160CR object which will control the display.  Do this
-using::
+using
+
+.. code-block:: python
 
     >>> import lcd160cr
     >>> lcd = lcd160cr.LCD160CR('X')
@@ -66,7 +74,9 @@ using::
 This assumes your display is connected in the X position.  If it's in the Y
 position then use ``lcd = lcd160cr.LCD160CR('Y')`` instead.
 
-To erase the screen and draw a line, try::
+To erase the screen and draw a line, try
+
+.. code-block:: python
 
     >>> lcd.set_pen(lcd.rgb(255, 0, 0), lcd.rgb(64, 64, 128))
     >>> lcd.erase()
@@ -76,7 +86,9 @@ Task: How would you change the colour of the line? How you place the line at ano
 
 The next example draws random rectangles on the screen.  You can copy-and-paste it
 into the MicroPython prompt by first pressing "Ctrl-E" at the prompt, then "Ctrl-D"
-once you have pasted the text. ::
+once you have pasted the text.
+
+.. code-block:: python
 
     from random import randint
     for i in range(1000):
@@ -92,14 +104,18 @@ Using the touch sensor
 
 The display includes a resistive touch sensor that can report the position (in
 pixels) of a single force-based touch on the screen.  To see if there is a touch
-on the screen use::
+on the screen use
+
+.. code-block:: python
 
     >>> lcd.is_touched()
 
 This will return either ``False`` or ``True``.  Run the above command while touching
 the screen to see the result.
 
-To get the location of the touch you can use the method::
+To get the location of the touch you can use the method
+
+.. code-block:: python
 
     >>> lcd.get_touch()
 
@@ -111,7 +127,9 @@ recent) touch.
 Playing around with setup commands
 -----------------------
 
-Let's see how easy it is to write something on the screen::
+Let's see how easy it is to write something on the screen
+
+.. code-block:: python
 
     import lcd160cr
 
@@ -138,7 +156,9 @@ The display supports input from a UART and implements basic VT100 commands, whic
 means it can be used as a simple, general purpose terminal.  Let's set up the
 pyboard to redirect its output to the display.
 
-First you need to create a UART object::
+First you need to create a UART object
+
+.. code-block:: python
 
     >>> import pyb
     >>> uart = pyb.UART('XA', 115200)
@@ -146,7 +166,9 @@ First you need to create a UART object::
 This assumes your display is connected to position X.  If it's on position Y then
 use ``uart = pyb.UART('YA', 115200)`` instead.
 
-Now, connect the REPL output to this UART::
+Now, connect the REPL output to this UART
+
+.. code-block:: python
 
     >>> pyb.repl_uart(uart)
 
