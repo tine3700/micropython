@@ -6,7 +6,9 @@ of the default USB flash drive.
 
 To do this we must first edit the ``boot.py`` file to change the USB
 configuration.  If you have not yet touched your ``boot.py`` file then it
-will look something like this::
+will look something like this
+
+.. code-block:: python
 
     # boot.py -- run on boot-up
     # can run arbitrary Python, but best to keep it minimal
@@ -17,12 +19,16 @@ will look something like this::
     #pyb.usb_mode('VCP+HID') # act as a serial device and a mouse
 
 To enable the mouse mode, uncomment the last line of the file, to
-make it look like::
+make it look like
+
+.. code-block:: python
 
     pyb.usb_mode('VCP+HID') # act as a serial device and a mouse
 
 If you already changed your ``boot.py`` file, then the minimum code it
-needs to work is::
+needs to work is
+
+.. code-block:: python
 
     import pyb
     pyb.usb_mode('VCP+HID')
@@ -39,7 +45,9 @@ Sending mouse events by hand
 
 To get the py-mouse to do anything we need to send mouse events to the PC.
 We will first do this manually using the REPL prompt.  Connect to your
-pyboard using your serial program and type the following::
+pyboard using your serial program and type the following
+
+.. code-block:: python
 
     >>> hid = pyb.USB_HID()
     >>> hid.send((0, 10, 0, 0))
@@ -48,7 +56,9 @@ Your mouse should move 10 pixels to the right!  In the command above you
 are sending 4 pieces of information: button status, x, y and scroll.  The
 number 10 is telling the PC that the mouse moved 10 pixels in the x direction.
 
-Let's make the mouse oscillate left and right::
+Let's make the mouse oscillate left and right
+
+.. code-block:: python
 
     >>> import math
     >>> def osc(n, d):
@@ -95,7 +105,9 @@ to the filesystem (the USB drive should appear), and you can edit ``main.py``.
 (Leave ``boot.py`` as-is, because we still want to go back to HID-mode after
 we finish editing ``main.py``.)
 
-In ``main.py`` put the following code::
+In ``main.py`` put the following code
+
+.. code-block:: python
 
     import pyb
 
@@ -123,7 +135,9 @@ If you leave your pyboard as-is, it'll behave as a mouse everytime you plug
 it in.  You probably want to change it back to normal.  To do this you need
 to first enter safe mode (see above), and then edit the ``boot.py`` file.
 In the ``boot.py`` file, comment out (put a # in front of) the line with the
-``VCP+HID`` setting, so it looks like::
+``VCP+HID`` setting, so it looks like
+
+.. code-block:: python
 
     #pyb.usb_mode('VCP+HID') # act as a serial device and a mouse
 
