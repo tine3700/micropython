@@ -9,7 +9,9 @@ Using the accelerometer
 The pyboard has an accelerometer (a tiny mass on a tiny spring) that can be used
 to detect the angle of the board and motion. There is a different sensor for
 each of the x, y, z directions. To get the value of the accelerometer, create a
-pyb.Accel() object and then call the x() method. ::
+pyb.Accel() object and then call the x() method.
+
+.. code-block:: python
 
     >>> accel = pyb.Accel()
     >>> accel.x()
@@ -21,7 +23,9 @@ perfectly still there will be some variation in the number that you measure.
 Because of this, you shouldn't use the exact value of the x() method but see if
 it is in a certain range.
 
-We will start by using the accelerometer to turn on a light if it is not flat. ::
+We will start by using the accelerometer to turn on a light if it is not flat.
+
+.. code-block:: python
 
     accel = pyb.Accel()
     light = pyb.LED(3)
@@ -51,7 +55,9 @@ Making a spirit level
 ---------------------
 
 The example above is only sensitive to the angle in the x direction but if we
-use the ``y()`` value and more LEDs we can turn the pyboard into a spirit level. ::
+use the ``y()`` value and more LEDs we can turn the pyboard into a spirit level.
+
+.. code-block:: python
 
     xlights = (pyb.LED(2), pyb.LED(3))
     ylights = (pyb.LED(1), pyb.LED(4))
