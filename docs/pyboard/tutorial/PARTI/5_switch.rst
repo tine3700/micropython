@@ -6,14 +6,18 @@ is a hard-reset switch, and if you press it then it restarts the pyboard
 from scratch, equivalent to turning the power off then back on.
 
 The USR switch is for general use, and is controlled via a Switch object.
-To make a switch object do::
+To make a switch object do
+
+.. code-block:: python
 
     >>> sw = pyb.Switch()
 
 Remember that you may need to type ``import pyb`` if you get an error that
 the name ``pyb`` does not exist.
 
-With the switch object you can get its status::
+With the switch object you can get its status
+
+.. code-block:: python
 
     >>> sw.value()
     False
@@ -22,7 +26,9 @@ This will print ``False`` if the switch is not held, or ``True`` if it is held.
 Try holding the USR switch down while running the above command.
 
 There is also a shorthand notation to get the switch status, by "calling" the
-switch object::
+switch object
+
+.. code-block:: python
 
     >>> sw()
     False
@@ -34,7 +40,9 @@ The switch is a very simple object, but it does have one advanced feature:
 the ``sw.callback()`` function.  The callback function sets up something to
 run when the switch is pressed, and uses an interrupt.  It's probably best
 to start with an example before understanding how interrupts work.  Try
-running the following at the prompt::
+running the following at the prompt
+
+.. code-block:: python
 
     >>> sw.callback(lambda:print('press!'))
 
@@ -43,20 +51,26 @@ down.  Go ahead and try it: press the USR switch and watch the output on
 your PC.  Note that this print will interrupt anything you are typing, and
 is an example of an interrupt routine running asynchronously.
 
-As another example try::
+As another example try
+
+.. code-block:: python
 
     >>> sw.callback(lambda:pyb.LED(1).toggle())
 
 This will toggle the red LED each time the switch is pressed.  And it will
 even work while other code is running.
 
-To disable the switch callback, pass ``None`` to the callback function::
+To disable the switch callback, pass ``None`` to the callback function
+
+.. code-block:: python
 
     >>> sw.callback(None)
 
 You can pass any function (that takes zero arguments) to the switch callback.
 Above we used the ``lambda`` feature of Python to create an anonymous function
-on the fly.  But we could equally do::
+on the fly.  But we could equally do
+
+.. code-block:: python
 
     >>> def f():
     ...   pyb.LED(1).toggle()
@@ -98,7 +112,7 @@ on the pin for any changes, and the following will occur:
 5. The switch interrupt handler returns, and the microcontroller is
    notified that the interrupt has been dealt with.
 6. The microcontroller restores the state that it saved in step 2.
-7. Execution continues of the code that was running at the beginning.  Apart
+7. Execution continues of the code that was running at the beginning. Apart
    from the pause, this code does not notice that it was interrupted.
 
 The above sequence of events gets a bit more complicated when multiple
