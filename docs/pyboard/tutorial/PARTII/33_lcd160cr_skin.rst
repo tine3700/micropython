@@ -123,8 +123,7 @@ Let's see how easy it is to write something on the screen::
     lcd.write('Hello MicroPython!')
     print('touch:', lcd.get_touch())
 
-Let's try to turn off the Display. Therefore you can use the LCD160CR.set_power(on) comand. The given value of on:0 or False will turn the display off. Which value will turn it on again?
-Now that we switched on the display, we can set the orientation with the following parameters: PORTRAIT, LANDSCAPE, PORTRAIT_UPSIDEDOWN and LANDSCAPE_UPSIDEDOWN. You can use LCD160CR.set_orient(orient) for this task.
+**Task**: How would you change the orientation of the Display? How can you change the font size and colour?
 
 Using the RGB Method for setting colour of the font
 ----------------------
