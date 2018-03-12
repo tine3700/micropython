@@ -7,8 +7,7 @@ In addition to turning LEDs on and off, it is also possible to control the brigh
 
 Components
 ----------
-Inside your blue ESD box you'll find a 100 Ohm resistor and a blue LED soldered together. If you compare the setup to the schematics in :ref:`img/fading_leds_breadboard_fritzing.png` You'll find that this is made up simpler to get used to using first external components that you can connect to your pyboard. But if you want to try this example with a breadboard again,
-you will need:
+Inside your blue ESD box you'll find a 100 Ohm resistor and an LED. If you compare the setup to the schematics in you'll find that this is made up simpler to get used to using first external components with your pyboard. But if you want to try this example with a breadboard again, you will need:
 
 - Standard 5 or 3 mm LED
 - 100 Ohm resistor
