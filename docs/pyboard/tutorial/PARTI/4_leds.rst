@@ -3,6 +3,8 @@ Turning on LEDs and basic Python concepts
 
 The easiest thing to do on the pyboard is to turn on the LEDs attached to the board. Connect the board, and log in as described in tutorial 1. We will start by turning and LED on in the interpreter, type the following
 
+.. code-block:: python
+
     >>> myled = pyb.LED(1)
     >>> myled.on()
     >>> myled.off()
