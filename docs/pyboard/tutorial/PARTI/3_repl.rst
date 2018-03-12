@@ -38,7 +38,9 @@ the "Serial" radio button on the right, then enter you COM port (eg COM4) in the
 Mac OS X
 --------
 
-Open a terminal and run::
+Open a terminal and run
+
+.. code-block:: python
 
     screen /dev/tty.usbmodem*
     
@@ -82,9 +84,7 @@ see below.
 
 Go ahead and try typing in some other commands.  For example
 
-
-
-
+.. code-block:: python
 
     >>> pyb.LED(1).on()
     >>> pyb.LED(2).on()
@@ -99,10 +99,7 @@ Resetting the board
 -------------------
 
 If something goes wrong, you can reset the board in two ways. The first is to press CTRL-D
-at the MicroPython prompt, which performs a soft reset.  You will see a message something like
-
-
-
+at the MicroPython prompt, which performs a soft reset.  You will see a message something like::
 
     >>> 
     PYB: sync filesystems
