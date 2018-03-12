@@ -30,18 +30,24 @@ Creating a Servo object
 -----------------------
 
 Plug in a servo to position 1 (the one with pin X1) and create a servo object
-using::
+using
+
+.. code-block:: python
 
     >>> servo1 = pyb.Servo(1)
 
-To change the angle of the servo use the ``angle`` method::
+To change the angle of the servo use the ``angle`` method
+
+.. code-block:: python
 
     >>> servo1.angle(45)
     >>> servo1.angle(-60)
 
 The angle here is measured in degrees, and ranges from about -90 to +90,
 depending on the motor.  Calling ``angle`` without parameters will return
-the current angle::
+the current angle
+
+.. code-block:: python
 
     >>> servo1.angle()
     -60
@@ -52,14 +58,18 @@ the angle you set, due to rounding errors in setting the pulse width.
 You can pass a second parameter to the ``angle`` method, which specifies how
 long to take (in milliseconds) to reach the desired angle.  For example, to
 take 1 second (1000 milliseconds) to go from the current position to 50 degrees,
-use ::
+use
+
+.. code-block:: python
 
      >>> servo1.angle(50, 1000)
 
 This command will return straight away and the servo will continue to move
 to the desired angle, and stop when it gets there.  You can use this feature
 as a speed control, or to synchronise 2 or more servo motors.  If we have
-another servo motor (``servo2 = pyb.Servo(2)``) then we can do ::
+another servo motor (``servo2 = pyb.Servo(2)``) then we can do
+
+.. code-block:: python
 
     >>> servo1.angle(-45, 2000); servo2.angle(60, 2000)
 
@@ -94,12 +104,16 @@ given speed.
 On the pyboard, the servo object for a continuous rotation motor is
 the same as before.  In fact, using ``angle`` you can set the speed.  But
 to make it easier to understand what is intended, there is another method
-called ``speed`` which sets the speed::
+called ``speed`` which sets the speed
+
+.. code-block:: python
 
     >>> servo1.speed(30)
 
 ``speed`` has the same functionality as ``angle``: you can get the speed,
-set it, and set it with a time to reach the final speed. ::
+set it, and set it with a time to reach the final speed.
+
+.. code-block:: python
 
     >>> servo1.speed()
     30
@@ -122,7 +136,9 @@ Calibration
 
 The conversion from angle or speed to pulse width is done by the servo
 object using its calibration values.  To get the current calibration,
-use ::
+use
+
+.. code-block:: python
 
     >>> servo1.calibration()
     (640, 2420, 1500, 2470, 2200)
@@ -138,7 +154,9 @@ There are 5 numbers here, which have meaning:
 5. The pulse width corresponding to a speed of 100.  This sets the conversion
    in the method ``speed`` of speed to pulse width.
 
-You can recalibrate the servo (change its default values) by using::
+You can recalibrate the servo (change its default values) by using
+
+.. code-block:: python
 
     >>> servo1.calibration(700, 2400, 1510, 2500, 2000)
 
