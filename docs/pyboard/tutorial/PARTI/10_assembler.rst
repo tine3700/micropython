@@ -16,7 +16,9 @@ Returning a value
 -----------------
 
 Inline assembler functions are denoted by a special function decorator.
-Let's start with the simplest example::
+Let's start with the simplest example
+
+.. code-block:: python
 
     @micropython.asm_thumb
     def fun():
@@ -33,7 +35,9 @@ If you run ``print(fun())`` you will see it print out 42.
 Accessing peripherals
 ---------------------
 
-For something a bit more complicated, let's turn on an LED::
+For something a bit more complicated, let's turn on an LED
+
+.. code-block:: python
 
     @micropython.asm_thumb
     def led_on():
@@ -68,7 +72,9 @@ Inline assembler functions can accept up to 4 arguments.  If they are
 used, they must be named ``r0``, ``r1``, ``r2`` and ``r3`` to reflect the registers
 and the calling conventions.
 
-Here is a function that adds its arguments::
+Here is a function that adds its arguments
+
+.. code-block:: python
 
     @micropython.asm_thumb
     def asm_add(r0, r1):
@@ -84,7 +90,9 @@ Loops
 We can assign labels with ``label(my_label)``, and branch to them using
 ``b(my_label)``, or a conditional branch like ``bgt(my_label)``.
 
-The following example flashes the green LED.  It flashes it ``r0`` times. ::
+The following example flashes the green LED.  It flashes it ``r0`` times.
+
+.. code-block:: python
 
     @micropython.asm_thumb
     def flash_led(r0):
@@ -123,9 +131,3 @@ The following example flashes the green LED.  It flashes it ``r0`` times. ::
         label(loop_entry)
         cmp(r0, 0)
         bgt(loop1)
-
-Further reading
----------------
-
-For further information about supported instructions of the inline assembler,
-see the :ref:`reference documentation <asm_thumb2_index>`.
