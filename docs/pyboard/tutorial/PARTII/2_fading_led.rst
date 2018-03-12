@@ -42,7 +42,7 @@ For switching on the LED on `X1`
 
 .. code-block:: python
 
-    pin_x1=pyb.Pin('X1', pyb.Pin.IN, pyb.Pin.PULL_UP)
+    pin_x1 = pyb.Pin('X1', pyb.Pin.IN, pyb.Pin.PULL_UP)
 
 
 To achieve the fading effect shown at the beginning of this tutorial, we want to set the pulse-width to a small value, then slowly increase the pulse-width to brighten the LED, and start over when we reach some maximum brightness
