@@ -1,7 +1,7 @@
 Turning on LEDs and basic Python concepts
 =========================================
 
-The easiest thing to do on the pyboard is to turn on the LEDs attached to the board. Connect the board, and log in as described in tutorial 1. We will start by turning and LED on in the interpreter, type the following ::
+The easiest thing to do on the pyboard is to turn on the LEDs attached to the board. Connect the board, and log in as described in tutorial 1. We will start by turning and LED on in the interpreter, type the following
 
     >>> myled = pyb.LED(1)
     >>> myled.on()
@@ -9,7 +9,9 @@ The easiest thing to do on the pyboard is to turn on the LEDs attached to the bo
 
 These commands turn the LED on and off.
 
-This is all very well but we would like this process to be automated. Open the file MAIN.PY on the pyboard in your favourite text editor. Write or paste the following lines into the file. If you are new to python, then make sure you get the indentation correct since this matters! ::
+This is all very well but we would like this process to be automated. Open the file MAIN.PY on the pyboard in your favourite text editor. Write or paste the following lines into the file. If you are new to python, then make sure you get the indentation correct since this matters!
+
+.. code-block:: python
 
     led = pyb.LED(2)
     while True:
@@ -29,12 +31,16 @@ The first line of code creates an LED object which we have then called led. When
 A Disco on your pyboard
 -----------------------
 
-So far we have only used a single LED but the pyboard has 4 available. Let's start by creating an object for each LED so we can control each of them. We do that by creating a list of LEDS with a list comprehension. ::
+So far we have only used a single LED but the pyboard has 4 available. Let's start by creating an object for each LED so we can control each of them. We do that by creating a list of LEDS with a list comprehension.
+
+.. code-block:: python
 
     leds = [pyb.LED(i) for i in range(1,5)]
 
 If you call pyb.LED() with a number that isn't 1,2,3,4 you will get an error message.
-Next we will set up an infinite loop that cycles through each of the LEDs turning them on and off. ::
+Next we will set up an infinite loop that cycles through each of the LEDs turning them on and off.
+
+.. code-block:: python
 
     n = 0
     while True:
@@ -44,7 +50,9 @@ Next we will set up an infinite loop that cycles through each of the LEDs turnin
 
 Here, n keeps track of the current LED and every time the loop is executed we cycle to the next n (the % sign is a modulus operator that keeps n between 0 and 3.) Then we access the nth LED and toggle it. If you run this you should see each of the LEDs turning on then all turning off again in sequence.
 
-One problem you might find is that if you stop the script and then start it again that the LEDs are stuck on from the previous run, ruining our carefully choreographed disco. We can fix this by turning all the LEDs off when we initialise the script and then using a try/finally block. When you press CTRL-C, MicroPython generates a VCPInterrupt exception. Exceptions normally mean something has gone wrong and you can use a try: command to "catch" an exception. In this case it is just the user interrupting the script, so we don't need to catch the error but just tell MicroPython what to do when we exit. The finally block does this, and we use it to make sure all the LEDs are off. The full code is::
+One problem you might find is that if you stop the script and then start it again that the LEDs are stuck on from the previous run, ruining our carefully choreographed disco. We can fix this by turning all the LEDs off when we initialise the script and then using a try/finally block. When you press CTRL-C, MicroPython generates a VCPInterrupt exception. Exceptions normally mean something has gone wrong and you can use a try: command to "catch" an exception. In this case it is just the user interrupting the script, so we don't need to catch the error but just tell MicroPython what to do when we exit. The finally block does this, and we use it to make sure all the LEDs are off. The full code is
+
+.. code-block:: python
 
     leds = [pyb.LED(i) for i in range(1,5)]
     for l in leds: 
@@ -63,7 +71,9 @@ One problem you might find is that if you stop the script and then start it agai
 The Special LEDs
 ----------------
 
-The yellow and blue LEDs are special. As well as turning them on and off, you can control their intensity using the intensity() method. This takes a number between 0 and 255 that determines how bright it is. The following script makes the blue LED gradually brighter then turns it off again. ::
+The yellow and blue LEDs are special. As well as turning them on and off, you can control their intensity using the intensity() method. This takes a number between 0 and 255 that determines how bright it is. The following script makes the blue LED gradually brighter then turns it off again.
+
+.. code-block:: python
 
     led = pyb.LED(4)
     intensity = 0
