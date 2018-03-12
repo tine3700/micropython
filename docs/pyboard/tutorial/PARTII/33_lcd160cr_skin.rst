@@ -109,7 +109,20 @@ third entries in the tuple being the x and y coordinates of the current (or most
 recent) touch.
 
 Playing around with setup commands
-----------------------
+-----------------------
+
+Let's see how easy it is to write something on the screen::
+
+    import lcd160cr
+
+    lcd = lcd160cr.LCD160CR('X')
+    lcd.set_orient(lcd160cr.PORTRAIT)
+    lcd.set_pos(0, 0)
+    lcd.set_text_color(lcd.rgb(255, 0, 0), lcd.rgb(0, 0, 0))
+    lcd.set_font(1)
+    lcd.write('Hello MicroPython!')
+    print('touch:', lcd.get_touch())
+
 Let's try to turn off the Display. Therefore you can use the LCD160CR.set_power(on) comand. The given value of on:0 or False will turn the display off. Which value will turn it on again?
 Now that we switched on the display, we can set the orientation with the following parameters: PORTRAIT, LANDSCAPE, PORTRAIT_UPSIDEDOWN and LANDSCAPE_UPSIDEDOWN. You can use LCD160CR.set_orient(orient) for this task.
 
