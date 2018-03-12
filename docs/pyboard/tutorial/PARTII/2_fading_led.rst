@@ -25,7 +25,7 @@ For this tutorial, we will use the ``X1`` pin. Connect one end of the resistor t
 Code
 ----
 
-By examining the `Pinlayout for the pyboard lite <http://docs.micropython.org/en/latest/pyboard/pyboard/quickref.html#quickref>_ , we see that ``X1`` is connected to channel 1 of timer 5 (``TIM5 CH1``). Therefore we will first create a ``Timer`` object for timer 5, then create a ``TimerChannel`` object for channel 1
+By examining the `_Pinlayout for the pyboard lite <http://docs.micropython.org/en/latest/pyboard/pyboard/quickref.html#quickref>`_ , we see that ``X1`` is connected to channel 1 of timer 5 (``TIM5 CH1``). Therefore we will first create a ``Timer`` object for timer 5, then create a ``TimerChannel`` object for channel 1
 
 .. code-block:: python
 
