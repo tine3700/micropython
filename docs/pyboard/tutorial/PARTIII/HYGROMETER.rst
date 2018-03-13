@@ -2,7 +2,6 @@ Building your own Temperature and Humidity Sensor
 ---------------------
 -------------------------
 
-
 After exploring the temperature and humidity sensor and runing your first test test script in the REPL, we want to combine our
 different hardware compnents.
 
