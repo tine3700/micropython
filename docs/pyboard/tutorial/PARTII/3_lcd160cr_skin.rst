@@ -138,16 +138,10 @@ Let's see how easy it is to write something on the screen
     lcd.set_pos(0, 0)
     lcd.set_text_color(lcd.rgb(255, 0, 0), lcd.rgb(0, 0, 0))
     lcd.set_font(1)
-    lcd.write('Hello MicroPython!')
+    lcd.write('Hello pyladies Berin!')
     print('touch:', lcd.get_touch())
 
-**Task**: How would you change the orientation of the Display? How can you change the font size and colour?
-
-Using the RGB Method for setting colour of the font
-----------------------
-The static LCD160CR.set_font(font, scale=0, bold=0, trans=0, scroll=0) can be used to set the font colour. 
-
-Return a 16-bit integer representing the given rgb color values. The 16-bit value can be used to set the font color (see LCD160CR.set_text_color()) pen color (see LCD160CR.set_pen()) and draw individual pixels.
+**Task**: How would you change the orientation of the Display? How can you change the font size and font colour?
 
 Directing the MicroPython output to the display
 -----------------------------------------------
@@ -163,7 +157,7 @@ First you need to create a UART object
     >>> import pyb
     >>> uart = pyb.UART('XA', 115200)
 
-This assumes your display is connected to position X.  If it's on position Y then
+This assumes your display is connected to position ``X``.  If it's on position Y then
 use ``uart = pyb.UART('YA', 115200)`` instead.
 
 Now, connect the REPL output to this UART
