@@ -24,7 +24,7 @@ Getting the driver
 
 You can control the display directly using a power/enable pin and an I2C
 bus, but it is much more convenient to use the driver provided by the
-:mod:`lcd160cr` module.  This driver is included in recent version of the
+`lcd160cr <http://docs.micropython.org/en/latest/pyboard/library/lcd160cr.html#module-lcd160cr>`_ module.  This driver is included in recent version of the
 pyboard firmware (see `here <http://micropython.org/download>`__).  You
 can also find the driver in the GitHub repository
 `here <https://github.com/micropython/micropython/blob/master/drivers/display/lcd160cr.py>`__, and to use this version you will need to copy the file to your
