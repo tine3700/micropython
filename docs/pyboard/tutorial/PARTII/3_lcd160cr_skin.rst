@@ -8,7 +8,7 @@ This tutorial shows how to get started using the LCD160CR skin.
     :width: 800px
 
 For detailed documentation of the driver for the display see the
-:mod:`lcd160cr <http://docs.micropython.org/en/latest/pyboard/library/lcd160cr.html#module-lcd160cr>`_ module.
+`lcd160cr <http://docs.micropython.org/en/latest/pyboard/library/lcd160cr.html#module-lcd160cr>`_ module.
 
 Plugging in the display on top of a pyboard
 -----------------------
