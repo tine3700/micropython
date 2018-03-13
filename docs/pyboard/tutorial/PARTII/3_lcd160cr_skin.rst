@@ -97,7 +97,7 @@ once you have pasted the text.
         lcd.set_pen(fg, bg)
         lcd.rect(randint(0, lcd.w), randint(0, lcd.h), randint(10, 40), randint(10, 40))
         
-Task: How would you draw two rectangles on the screen? Try to give them different colours.
+**Task:** How would you draw two rectangles on the screen? Try to give them different colours.
 
 Using the touch sensor
 ----------------------
