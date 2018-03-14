@@ -30,7 +30,7 @@ For switching on the LED on `X1``
 
     pin_x1 = pyb.Pin('X1', pyb.Pin.IN, pyb.Pin.PULL_UP)
 
-By examining the `Pinlayout for the pyboard lite <http://micropython.org/resources/pyblitev10ac-pinout.jpg>`_ , we see that ``X1`` is connected to channel 3 of timer 5 (``TIM5 CH1``). Therefore we will first create a ``Timer`` object for timer 5, then create a ``TimerChannel`` object for channel 3
+By examining the `Pinlayout for the pyboard lite <http://micropython.org/resources/pyblitev10ac-pinout.jpg>`_ , we see that ``X1`` is connected to channel 3 of timer 5 (``TIM5 CH3``). Therefore we will first create a ``Timer`` object for timer 5, then create a ``TimerChannel`` object for channel 3
 
 .. code-block:: python
 
