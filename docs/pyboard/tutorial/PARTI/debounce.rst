@@ -10,7 +10,9 @@ makes sure the value on the pin is stable.
 The following function does just this.  It gets the current value of the given
 pin, and then waits for the value to change.  The new pin value must be stable
 for a continuous 20ms for it to register the change.  You can adjust this time
-(to say 50ms) if you still have noise. ::
+(to say 50ms) if you still have noise.
+
+.. code-block:: python
 
     import pyb
 
@@ -27,7 +29,9 @@ for a continuous 20ms for it to register the change.  You can adjust this time
             pyb.delay(1)
 
 
-Use it something like this::
+Use it something like this
+
+.. code-block:: python
 
     import pyb
 
