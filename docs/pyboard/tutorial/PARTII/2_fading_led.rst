@@ -30,7 +30,7 @@ For switching on the LED on `X1``
 
     pin_x1 = pyb.Pin('X1', pyb.Pin.IN, pyb.Pin.PULL_UP)
 
-By examining the `Pinlayout for the pyboard lite <http://micropython.org/resources/pyblitev10ac-pinout.jpg>`_ , we see that ``X1`` is connected to channel 1 of timer 5 (``TIM5 CH1``). Therefore we will first create a ``Timer`` object for timer 5, then create a ``TimerChannel`` object for channel 1
+By examining the `Pinlayout for the pyboard lite <http://micropython.org/resources/pyblitev10ac-pinout.jpg>`_ , we see that ``X1`` is connected to channel 3 of timer 5 (``TIM5 CH1``). Therefore we will first create a ``Timer`` object for timer 5, then create a ``TimerChannel`` object for channel 3
 
 .. code-block:: python
 
@@ -39,7 +39,7 @@ By examining the `Pinlayout for the pyboard lite <http://micropython.org/resourc
     
     # timer 5 will be created with a frequency of 100 Hz
     tim = pyb.Timer(5, freq=100)
-    tchannel = tim.channel(1, Timer.PWM, pin=pyb.Pin.board.X1, pulse_width=0)
+    tchannel = tim.channel(3, Timer.PWM, pin=pyb.Pin.board.X1, pulse_width=0)
 
 Brightness of the LED in PWM is controlled by controlling the pulse-width, that is the amount of time the LED is on every cycle. With a timer frequency of 100 Hz, each cycle takes 0.01 second, or 10 ms.
 
