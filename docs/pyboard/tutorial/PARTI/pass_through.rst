@@ -1,7 +1,9 @@
 Making a UART - USB pass through
 ================================
 
-It's as simple as::
+It's as simple as
+
+.. code-block:: python
 
     import pyb
     import select
