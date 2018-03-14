@@ -8,22 +8,30 @@ The 14 timers are numbered 1 through 14, but 3 is reserved
 for internal use, and 5 and 6 are used for servo and ADC/DAC control.
 Avoid using these timers if possible.
 
-Let's create a timer object::
+Let's create a timer object
+
+.. code-block:: python
 
     >>> tim = pyb.Timer(4)
 
-Now let's see what we just created::
+Now let's see what we just created
+
+.. code-block:: python
 
     >>> tim
     Timer(4)
 
 The pyboard is telling us that ``tim`` is attached to timer number 4, but
 it's not yet initialised.  So let's initialise it to trigger at 10 Hz
-(that's 10 times per second)::
+(that's 10 times per second)
+
+.. code-block:: python
 
     >>> tim.init(freq=10)
 
-Now that it's initialised, we can see some information about the timer::
+Now that it's initialised, we can see some information about the timer
+
+.. code-block:: python
 
     >>> tim
     Timer(4, prescaler=624, period=13439, mode=UP, div=1)
@@ -70,7 +78,9 @@ The function that you pass to callback must take 1 argument, which is
 the timer object that triggered.  This allows you to control the timer
 from within the callback function.
 
-We can create 2 timers and run them independently::
+We can create 2 timers and run them independently
+
+.. code-block:: python
 
     >>> tim4 = pyb.Timer(4, freq=10)
     >>> tim7 = pyb.Timer(7, freq=20)
