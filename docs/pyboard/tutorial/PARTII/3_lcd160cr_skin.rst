@@ -50,7 +50,7 @@ To run the test from the MicroPython prompt do
 
 .. code-block:: python
 
-    >>> import lcd160cr_test
+    import lcd160cr_test
 
 It will then print some brief instructions.  You will need to know which
 position your display is connected to (X or Y) and then you can run (assuming
@@ -154,8 +154,8 @@ First you need to create a UART object
 
 .. code-block:: python
 
-    >>> import pyb
-    >>> uart = pyb.UART('XA', 115200)
+    import pyb
+    uart = pyb.UART('XA', 115200)
 
 This assumes your display is connected to position ``X``.  If it's on position Y then
 use ``uart = pyb.UART('YA', 115200)`` instead.
@@ -164,7 +164,7 @@ Now, connect the REPL output to this UART
 
 .. code-block:: python
 
-    >>> pyb.repl_uart(uart)
+    pyb.repl_uart(uart)
 
 From now on anything you type at the MicroPython prompt, and any output you
 receive, will appear on the display.
