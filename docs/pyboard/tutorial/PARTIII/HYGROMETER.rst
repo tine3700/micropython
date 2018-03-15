@@ -19,17 +19,24 @@ Take a look into the HDC1080 test program. The easiest way to show the meassured
 Display is directing the REPL to the Display. If you don't remember how that works. Please go back to Link:
 
 **TASK 1**
+
+Have a look at the datasheet of the pyboard lite with accelerometer. Can you adjust the test code in the hdc1080test.py and use the Temperature sensor with the other I2C? On which Pins is it?
+
+**TASK 2**
+
 Show the Temperature and Humidity on your Display with directing the REPL directly to it.
 
 This looks not very nice. Now we want to show both Temperature and Humidity values on a nice setup.
 
-**TASK 2**
+**TASK 3**
+
 Draw two squares and put the Temperature and Humidity values into these squares. Label both squares with the right values. Temperature in °C and Humidity in %. Feel free to do this in any way you like.
 
-**TASK 3**
+**TASK 4**
+
 Try to make two boxes for the temperature and the humidity values and show them on the Display. Or can you think of a more beautiful way?
 
-**TASK 4**
+**TASK 5**
 
 
 
