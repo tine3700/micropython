@@ -24,7 +24,7 @@ For this tutorial, we will use the ``X1`` pin. Connect one end of the resistor t
 Code
 ----
 
-For switching on the LED on `X1``
+For switching on the LED on ``X1``
 
 .. code-block:: python
 
@@ -94,7 +94,7 @@ If we want to have a breathing effect, where the LED fades from dim to bright th
         
 First Exercise
 ----------------
-How would you change the code, if you want to use channel 2 for this exercise? On which Pins is Channel 2?
+How would you change the code, if you want to use Pin ``X2`` for this exercise? Which channel would you need to change?
 
 Advanced Exercise
 -----------------
