@@ -39,7 +39,7 @@ Think about how you would like to log your data in an infinite loop. There are t
 
 	rtc = pyb.RTC()
 
-	def writeLog(rtc, temp, hum):
+    def writeLog(rtc, temp, hum):
     """Append a line with the current timestamp to the log file"""
     datetime=rtc.datetime()
     timestamp = ("%04d-%02d-%02d %02d:%02d:%02d" % (datetime[0],
