@@ -31,7 +31,7 @@ This looks not very nice. Now we want to show both Temperature and Humidity valu
 
 Show the Temperature and Humidity values on the Display. Try to show them in different colours. Add the right Temperature in °C and Humidity in %. Feel free to do this in any way you like.
 
-.. image::
+.. image:: /pyboard/tutorial/img/image.png
 
 **TASK 4: Data-logger for the Temperature**
 
