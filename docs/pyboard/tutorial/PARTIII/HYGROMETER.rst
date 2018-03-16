@@ -35,6 +35,9 @@ Show the Temperature and Humidity values on the Display. Try to show them in dif
 
 Think about how you would like to log your data in an infinite loop. There are two ways of doing this. There is the internal flash of the pyboard and if you put a SD-Card in your pyboard, the data will be logged to that file.
 
+.. code-block:: python
+
+
 rtc = pyb.RTC()
 
 def writeLog(rtc, temp, hum):
