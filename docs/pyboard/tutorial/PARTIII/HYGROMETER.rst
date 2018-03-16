@@ -37,14 +37,13 @@ Think about how you would like to log your data in an infinite loop. There are t
 
 .. code-block:: python
 
+	rtc = pyb.RTC()
 
-rtc = pyb.RTC()
-
-def writeLog(rtc, temp, hum):
+	def writeLog(rtc, temp, hum):
     """Append a line with the current timestamp to the log file"""
     datetime=rtc.datetime()
     timestamp = ("%04d-%02d-%02d %02d:%02d:%02d" % (datetime[0],
-datetime[1], datetime[2], datetime[4], datetime[5], datetime[6]))
+	datetime[1], datetime[2], datetime[4], datetime[5], datetime[6]))
     logline = ("%s %s %s" % (timestamp, temp, hum))
 
     print(logline)
@@ -64,6 +63,6 @@ datetime[1], datetime[2], datetime[4], datetime[5], datetime[6]))
     except OSError as error:
         print("Error: can not write to SD card. %s" % error)
 
-def log():
+	def log():
 	for i in range(20):
 	    writeLog(rtc,hdc_temp(),hdc_hum())
