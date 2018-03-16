@@ -31,6 +31,8 @@ This looks not very nice. Now we want to show both Temperature and Humidity valu
 
 Show the Temperature and Humidity values on the Display. Try to show them in different colours. Add the right Temperature in °C and Humidity in %. Feel free to do this in any way you like.
 
+.. image::
+
 **TASK 4: Data-logger for the Temperature**
 
 Think about how you would like to log your data in an infinite loop. There are two ways of doing this. There is the internal flash of the pyboard and if you put a SD-Card in your pyboard, the data will be logged to that file.
