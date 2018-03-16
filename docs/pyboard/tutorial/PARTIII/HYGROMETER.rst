@@ -18,24 +18,49 @@ Data sheet of the pyboard). Make sure the SDA
 Take a look into the HDC1080 test program. The easiest way to show the meassured temperature and humidity on your
 Display is directing the REPL to the Display. If you don't remember how that works. Please go back to Link:
 
-**TASK 1**
+**TASK 1: Using the other I2C connecton on the pyboard**
 
 Have a look at the datasheet of the pyboard lite with accelerometer. Can you adjust the test code in the hdc1080_test.py and use the Temperature sensor with the other I2C? On which Pins is it?
 
-**TASK 2 Temperature and Humidity on screen with the REPL**
+**TASK 2: Temperature and Humidity on screen with the REPL**
 
 Show the Temperature and Humidity on your Display with directing the REPL directly to it.
 This looks not very nice. Now we want to show both Temperature and Humidity values on a nice setup.
 
-**TASK 3 Temperature and Humidity on the screen**
+**TASK 3: Temperature and Humidity on the screen**
 
 Show the Temperature and Humidity values on the Display. Try to show them in different colours. Add the right Temperature in °C and Humidity in %. Feel free to do this in any way you like.
 
-**TASK 4**
+**TASK 4: Data-logger for the Temperature**
 
-Data-logger for the temperature and Humidity values. 
+Think about how you would like to log your data in an infinite loop. There are two ways of doing this. There is the internal flash of the pyboard and if you put a SD-Card in your pyboard, the data will be logged to that file.
 
-**TASK 5**
+rtc = pyb.RTC()
 
+def writeLog(rtc, temp, hum):
+    """Append a line with the current timestamp to the log file"""
+    datetime=rtc.datetime()
+    timestamp = ("%04d-%02d-%02d %02d:%02d:%02d" % (datetime[0],
+datetime[1], datetime[2], datetime[4], datetime[5], datetime[6]))
+    logline = ("%s %s %s" % (timestamp, temp, hum))
 
+    print(logline)
+    try:
+        with open("/sd/logdata.txt", "a") as f:
+            f.write("%s\n" % logline)
+            f.close()
+            pyb.sync()
+    except:
+	pass
+    try:
+	with open("/flash/logdata.txt", "a") as f:
+	    f.write("%s\n" % logline)
+            f.close()
+            pyb.sync()
 
+    except OSError as error:
+        print("Error: can not write to SD card. %s" % error)
+
+def log():
+	for i in range(20):
+	    writeLog(rtc,hdc_temp(),hdc_hum())
