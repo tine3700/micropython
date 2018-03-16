@@ -58,7 +58,7 @@ you have the display on position X)
 
 .. code-block:: python
 
-    >>> lcd160cr_test.test_all('X')
+    lcd160cr_test.test_all('X')
 
 Drawing some graphics
 ---------------------
@@ -68,8 +68,8 @@ using
 
 .. code-block:: python
 
-    >>> import lcd160cr
-    >>> lcd = lcd160cr.LCD160CR('X')
+    import lcd160cr
+    lcd = lcd160cr.LCD160CR('X')
 
 This assumes your display is connected in the X position.  If it's in the Y
 position then use ``lcd = lcd160cr.LCD160CR('Y')`` instead.
@@ -78,9 +78,9 @@ To erase the screen and draw a line, try
 
 .. code-block:: python
 
-    >>> lcd.set_pen(lcd.rgb(255, 0, 0), lcd.rgb(64, 64, 128))
-    >>> lcd.erase()
-    >>> lcd.line(10, 10, 50, 80)
+    lcd.set_pen(lcd.rgb(255, 0, 0), lcd.rgb(64, 64, 128))
+    lcd.erase()
+    lcd.line(10, 10, 50, 80)
     
 Task: How would you change the colour of the line? How you place the line at another place?
 
@@ -108,7 +108,7 @@ on the screen use
 
 .. code-block:: python
 
-    >>> lcd.is_touched()
+    lcd.is_touched()
 
 This will return either ``False`` or ``True``.  Run the above command while touching
 the screen to see the result.
@@ -117,7 +117,7 @@ To get the location of the touch you can use the method
 
 .. code-block:: python
 
-    >>> lcd.get_touch()
+    lcd.get_touch()
 
 This will return a 3-tuple, with the first entry being 0 or 1 depending on whether
 there is currently anything touching the screen (1 if there is), and the second and
