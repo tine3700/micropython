@@ -34,14 +34,14 @@ using
 
 .. code-block:: python
 
-    >>> servo1 = pyb.Servo(1)
+    servo1 = pyb.Servo(1)
 
 To change the angle of the servo use the ``angle`` method
 
 .. code-block:: python
 
-    >>> servo1.angle(45)
-    >>> servo1.angle(-60)
+    servo1.angle(45)
+    servo1.angle(-60)
 
 The angle here is measured in degrees, and ranges from about -90 to +90,
 depending on the motor.  Calling ``angle`` without parameters will return
@@ -49,7 +49,7 @@ the current angle
 
 .. code-block:: python
 
-    >>> servo1.angle()
+    servo1.angle()
     -60
 
 Note that for some angles, the returned angle is not exactly the same as
@@ -62,7 +62,7 @@ use
 
 .. code-block:: python
 
-     >>> servo1.angle(50, 1000)
+     servo1.angle(50, 1000)
 
 This command will return straight away and the servo will continue to move
 to the desired angle, and stop when it gets there.  You can use this feature
@@ -71,7 +71,7 @@ another servo motor (``servo2 = pyb.Servo(2)``) then we can do
 
 .. code-block:: python
 
-    >>> servo1.angle(-45, 2000); servo2.angle(60, 2000)
+    servo1.angle(-45, 2000); servo2.angle(60, 2000)
 
 This will move the servos together, making them both take 2 seconds to
 reach their final angles.
@@ -108,17 +108,17 @@ called ``speed`` which sets the speed
 
 .. code-block:: python
 
-    >>> servo1.speed(30)
+    servo1.speed(30)
 
 ``speed`` has the same functionality as ``angle``: you can get the speed,
 set it, and set it with a time to reach the final speed.
 
 .. code-block:: python
 
-    >>> servo1.speed()
+    servo1.speed()
     30
-    >>> servo1.speed(-20)
-    >>> servo1.speed(0, 2000)
+    servo1.speed(-20)
+    servo1.speed(0, 2000)
 
 The final command above will set the motor to stop, but take 2 seconds
 to do it.  This is essentially a control over the acceleration of the
@@ -140,7 +140,7 @@ use
 
 .. code-block:: python
 
-    >>> servo1.calibration()
+    servo1.calibration()
     (640, 2420, 1500, 2470, 2200)
 
 There are 5 numbers here, which have meaning:
@@ -158,7 +158,7 @@ You can recalibrate the servo (change its default values) by using
 
 .. code-block:: python
 
-    >>> servo1.calibration(700, 2400, 1510, 2500, 2000)
+    servo1.calibration(700, 2400, 1510, 2500, 2000)
 
 Of course, you would change the above values to suit your particular
 servo motor.
