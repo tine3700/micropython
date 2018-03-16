@@ -20,15 +20,14 @@ Display is directing the REPL to the Display. If you don't remember how that wor
 
 **TASK 1**
 
-Have a look at the datasheet of the pyboard lite with accelerometer. Can you adjust the test code in the hdc1080test.py and use the Temperature sensor with the other I2C? On which Pins is it?
+Have a look at the datasheet of the pyboard lite with accelerometer. Can you adjust the test code in the hdc1080_test.py and use the Temperature sensor with the other I2C? On which Pins is it?
 
-**TASK 2**
+**TASK 2 Temperature and Humidity on screen with the REPL**
 
 Show the Temperature and Humidity on your Display with directing the REPL directly to it.
-
 This looks not very nice. Now we want to show both Temperature and Humidity values on a nice setup.
 
-**TASK 3**
+**TASK 3 Temperature and Humidity on the screen**
 
 Show the Temperature and Humidity values on the Display. Try to show them in different colours. Add the right Temperature in °C and Humidity in %. Feel free to do this in any way you like.
 
