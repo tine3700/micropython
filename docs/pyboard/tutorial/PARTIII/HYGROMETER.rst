@@ -14,7 +14,7 @@ Hardware needed for this task:
 * Micro USB cable for connecting to the PC
 
 Wire up your Sensor to one of the I2C Ports (do you remember on which Pins they are? If not, you can always have a look at the
-Data sheet of the pyboard)
+Data sheet of the pyboard). Make sure the SDA
 Take a look into the HDC1080 test program. The easiest way to show the meassured temperature and humidity on your
 Display is directing the REPL to the Display. If you don't remember how that works. Please go back to Link:
 
@@ -30,11 +30,11 @@ This looks not very nice. Now we want to show both Temperature and Humidity valu
 
 **TASK 3**
 
-Draw two squares and put the Temperature and Humidity values into these squares. Label both squares with the right values. Temperature in °C and Humidity in %. Feel free to do this in any way you like.
+Show the Temperature and Humidity values on the Display. Try to show them in different colours. Add the right Temperature in °C and Humidity in %. Feel free to do this in any way you like.
 
 **TASK 4**
 
-Try to make two boxes for the temperature and the humidity values and show them on the Display. Or can you think of a more beautiful way?
+Data-logger for the temperature and Humidity values. 
 
 **TASK 5**
 
