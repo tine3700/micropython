@@ -39,11 +39,6 @@ def hdc_hum():
     t = hdc1080_read(1)
     return (t / 0x10000)*100
 
-#hdc = HDC1008(i2c)
-#hdc.reset()
-#hdc.heater(False)
-#print("Sensor ID: %s" % (hex(hdc.serial)))
-
 def read_sensors():
     print("Temperature (degree celsius): %.2f" % (hdc_temp()))
     print("Relative humidity (percent):  %.2f" % (hdc_hum()))
