@@ -1,4 +1,4 @@
-"""Tests for the hdc1008 module"""
+"""Tests for the hdc1080 module"""
 
 #check, if the sensor is connected to a ESP8266 or a pyboard
 import machine
