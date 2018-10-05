@@ -8,17 +8,18 @@ Hardware needed for this task:
 ----------------
 
 * pyboard lite with accelerometer
-* Jumper Wires and male Pins
-* Temperature Sensor HDC1080 on break out board
-* LCD160CRv1.0 Display with header
+* SensorTile Temperature Sensor HDC1080 on break out board
+* Protoskin-Adapter Board
+* LCD160CRv1.1 Display with header
 * Micro USB cable for connecting to the PC
 
-Wire up your Sensor to one of the I2C Ports (do you remember on which Pins they are? If not, you can always have a look at the
-Data sheet of the pyboard). Make sure the SDA
+Plug in the Protoskin-Adapter Board on top of the pyboard. The two connectors Wire up your Sensor to one of the I2C Ports (do you remember on which Pins they are? If not, you can always have a look at the data sheet of the pyboard.
 Take a look into the HDC1080 test program. The easiest way to show the meassured temperature and humidity on your
 Display is directing the REPL to the Display. If you don't remember how that works. Please go back to Link:
 
-**TASK 1: Using the other I2C connecton on the pyboard**
+.. image:: /docs/pyboard/tutorial/img/image.png
+
+**TASK 1: Using the I2C connecton at the Y-skin of the pyboard**
 
 Have a look at the datasheet of the pyboard lite with accelerometer. Can you adjust the test code in the hdc1080_test.py and use the Temperature sensor with the other I2C? On which Pins is it?
 
