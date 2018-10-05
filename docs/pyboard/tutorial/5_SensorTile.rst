@@ -17,7 +17,7 @@ Plug in the Protoskin-Adapter Board on top of the pyboard. The two connectors Wi
 Take a look into the HDC1080 test program. The easiest way to show the meassured temperature and humidity on your
 Display is directing the REPL to the Display. If you don't remember how that works. Please go back to Link:
 
-.. image:: /docs/pyboard/tutorial/img/image.png
+.. image:: /docs/pyboard/tutorial/img/1_SensorTile_Adapter.jpg
 
 **TASK 1: Using the I2C connecton at the Y-skin of the pyboard**
 
