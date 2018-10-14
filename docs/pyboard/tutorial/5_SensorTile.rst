@@ -1,19 +1,20 @@
 Building your own Temperature and Humidity Control Device
 ---------------------
 
+The MicroPython SensorTile has a Temperature and Humidity Sensor (HDCxxxx) a Light Sensor (), a Buzzer to make sound () and a RGB LED. For our next little step, we would like to combine
 After exploring the temperature and humidity sensor and runing your first test script in the REPL, we want to combine our
 different hardware components. Now we want to build our own Temperature and Humidity meassurement device. Of course, you can buy such devices for a few Euros, but where is the fun in that?
 
 Hardware needed for this task:
 ----------------
 
-* pyboard lite with accelerometer
+* pyboard lite with accelerometer and headers
 * SensorTile Temperature Sensor HDC1080 on break out board
 * Protoskin-Adapter Board
 * LCD160CRv1.1 Display with header
 * Micro USB cable for connecting to the PC
 
-Plug in the Protoskin-Adapter Board on top of the pyboard. The two connectors Wire up your Sensor to one of the I2C Ports (do you remember on which Pins they are? If not, you can always have a look at the data sheet of the pyboard.
+Plug in the Protoskin-Adapter Board on top of the pyboard.
 Take a look into the HDC1080 test program. The easiest way to show the meassured temperature and humidity on your
 Display is directing the REPL to the Display. If you don't remember how that works. Please go back to Link:
 
