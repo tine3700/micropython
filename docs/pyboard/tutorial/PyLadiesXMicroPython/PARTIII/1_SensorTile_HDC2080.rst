@@ -12,6 +12,10 @@ For connecting the sensor to the MicroPython pyboard plug in the X-Skin Adapter 
 Running the first test programm
 --------------------
 
-To see, if the different Sensors on the Tile are working. Please use the driver in this repository named tile_one.py. Besides the driver you'll find a little program to run.
+To see, if the different Sensors on the Tile are working. Please use the driver in this repository named tile_one.py. Besides the driver you'll find a little program to run. Type into your REPL:
 
+.. code-block:: python
 
+	import tile_one
+	s=tile_one.TILE_ONE()
+	s.demo()
