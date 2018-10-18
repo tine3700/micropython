@@ -7,4 +7,11 @@ a Light Sensor (OPT3001), an Amplifier (PAM8304) a Buzzer (Audio Magnetic) to ma
 MicroPython X-Skin Adapter Board
 ----------------------
 
-For connecting the sensor to the MicroPython pyboard plug in the X-Skin Adapter Board on the X-Position.
+For connecting the sensor to the MicroPython pyboard plug in the X-Skin Adapter Board on the X-Position. On top you have 2 x 20-pin bus headers for connecting different types of sensor adapter boards. To make sure to have them in the correct orientation place the hole in the SensorTile over the nut on the X-Skin Adapter Board.
+
+Running the first test programm
+--------------------
+
+To see, if the different Sensors on the Tile are working. Please use the driver in this repository named tile_one.py. Besides the driver you'll find a little program to run.
+
+
