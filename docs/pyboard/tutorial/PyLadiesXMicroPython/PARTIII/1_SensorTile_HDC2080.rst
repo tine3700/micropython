@@ -12,10 +12,12 @@ For connecting the sensor to the MicroPython pyboard plug in the X-Skin Adapter 
 Running the first test programm
 --------------------
 
-To see, if the different Sensors on the Tile are working. Please use the driver in this repository named tile_one.py. Besides the driver you'll find a little program to run. Type into your REPL:
+To see, if the different Sensors on the Tile are working. Please use the driver in this repository named tile_one.py. Besides the driver you'll find a little demo program to run. Type into your REPL:
 
 .. code-block:: python
 
 	import tile_one
 	s=tile_one.TILE_ONE()
 	s.demo()
+
+The first entry is the time since the pyboard was started in ms. Second entry is the LED value. Tmperature in °C, Humidity in % and Light Intensity measured in lux. There is also a little buzzer sound everytime you run the demo program.
