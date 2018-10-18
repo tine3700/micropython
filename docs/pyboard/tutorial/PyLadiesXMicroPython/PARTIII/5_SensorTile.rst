@@ -1,7 +1,8 @@
 Building your own Temperature and Humidity Control Device
 ---------------------
 
-The MicroPython SensorTile has a Temperature and Humidity Sensor (HDCxxxx) a Light Sensor (), a Buzzer to make sound () and a RGB LED. For our next little step, we would like to combine
+The MicroPython SensorTile has a Temperature and Humidity Sensor (HDC2080) a Light Sensor (OPT3001), an Amplifier (PAM8304) a Buzzer (Audio Magnetic) to make sound and a RGB LED for having some blinking.
+For our next little task, we would like to combine the LCD160CR and the Sensor adapter board.
 After exploring the temperature and humidity sensor and runing your first test script in the REPL, we want to combine our
 different hardware components. Now we want to build our own Temperature and Humidity meassurement device. Of course, you can buy such devices for a few Euros, but where is the fun in that?
 
@@ -9,20 +10,22 @@ Hardware needed for this task:
 ----------------
 
 * pyboard lite with accelerometer and headers
-* SensorTile Temperature Sensor HDC1080 on break out board
+* SensorTile Temperature Sensor HDC2080 on break out board
 * Protoskin-Adapter Board
 * LCD160CRv1.1 Display with header
 * Micro USB cable for connecting to the PC
 
-Plug in the Protoskin-Adapter Board on top of the pyboard.
-Take a look into the HDC1080 test program. The easiest way to show the meassured temperature and humidity on your
+Plug in the Protoskin-Adapter Board on top of the pyboard. Make sure to plug it into the 'X' position for this first task. PIC
+Take a look into the HDC2080 test program. The easiest way to show the meassured temperature and humidity on your
 Display is directing the REPL to the Display. If you don't remember how that works. Please go back to Link:
 
 .. image:: /docs/pyboard/tutorial/img/1_SensorTile_Adapter.jpg
 
 **TASK 1: Using the I2C connecton at the Y-skin of the pyboard**
 
-Have a look at the datasheet of the pyboard lite with accelerometer. Can you adjust the test code in the hdc1080_test.py and use the Temperature sensor with the other I2C? On which Pins is it?
+Have a look at the datasheet of the pyboard lite with accelerometer. There you can see that you have an 'X' and 'Y' position how to connect the different components. Can you adjust the test code in the hdc2080_test.py and use the Temperature sensor with the 'Y' position? On which Pins is it?
+
+**Note:** The Sensor Adapter board provides you the wiring between the I2C Pins already. YOu don't have to manually wire any connections up.
 
 **TASK 2: Temperature and Humidity on screen with the REPL**
 
