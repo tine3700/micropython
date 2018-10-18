@@ -20,4 +20,4 @@ To see, if the different Sensors on the Tile are working. Please use the driver 
 	s=tile_one.TILE_ONE()
 	s.demo()
 
-The first entry is the time since the pyboard was started in ms. Second entry is the LED value. Tmperature in °C, Humidity in % and Light Intensity measured in lux. There is also a little buzzer sound everytime you run the demo program.
+The first entry is the time since the pyboard was started in ms. Second entry is the LED value. Temperature in °C, Humidity in % and Light Intensity measured in lux. There is also a little buzzer sound everytime you run the demo program.
