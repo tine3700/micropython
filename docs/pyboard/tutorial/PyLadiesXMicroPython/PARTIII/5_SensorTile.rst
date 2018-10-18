@@ -14,6 +14,7 @@ Hardware needed for this task:
 * Protoskin-Adapter Board
 * LCD160CRv1.1 Display with header
 * Micro USB cable for connecting to the PC
+* SD-Card for the data-logger in advanced task
 
 Plug in the Protoskin-Adapter Board on top of the pyboard. Make sure to plug it into the 'X' position for this first task. PIC
 Take a look into the HDC2080 test program. The easiest way to show the meassured temperature and humidity on your
@@ -25,14 +26,14 @@ Display is directing the REPL to the Display. If you don't remember how that wor
 
 Have a look at the datasheet of the pyboard lite with accelerometer. There you can see that you have an 'X' and 'Y' position how to connect the different components. Can you adjust the test code in the hdc2080_test.py and use the Temperature sensor with the 'Y' position? On which Pins is it?
 
-**Note:** The Sensor Adapter board provides you the wiring between the I2C Pins already. YOu don't have to manually wire any connections up.
+**Note:** The Sensor Adapter board provides you the wiring between the I2C Pins and the sensor itself. You don't have to manually wire any connections up.
 
-**TASK 2: Temperature and Humidity on screen with the REPL**
+**TASK 2: Temperature and Humidity on your computer screen with the REPL**
 
 Show the Temperature and Humidity on your Display with directing the REPL directly to it.
 This looks not very nice. Now we want to show both Temperature and Humidity values on a nice setup.
 
-**TASK 3: Temperature and Humidity on the screen**
+**TASK 3: Temperature and Humidity on the LCD160CR**
 
 Show the Temperature and Humidity values on the Display. Try to show them in different colours. Add the right Temperature in °C and Humidity in %. Feel free to do this in any way you like.
 
