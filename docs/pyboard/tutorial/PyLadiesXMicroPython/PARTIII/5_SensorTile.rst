@@ -1,7 +1,7 @@
 Building your own Temperature and Humidity Control Device
 ---------------------
 
-The MicroPython SensorTile has a Temperature and Humidity Sensor (HDC2080) a Light Sensor (OPT3001), an Amplifier (PAM8304) a Buzzer (Audio Magnetic) to make sound and a RGB LED for having some blinking.
+
 For our next little task, we would like to combine the LCD160CR and the Sensor adapter board.
 After exploring the temperature and humidity sensor and runing your first test script in the REPL, we want to combine our
 different hardware components. Now we want to build our own Temperature and Humidity meassurement device. Of course, you can buy such devices for a few Euros, but where is the fun in that?
