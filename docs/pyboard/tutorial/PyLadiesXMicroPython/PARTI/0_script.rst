@@ -1,3 +1,5 @@
+.. _Top:
+
 Running your first script
 =========================
 
@@ -107,3 +109,9 @@ LED should turn on and stay on.
 
 Congratulations!  You have written and run your very first MicroPython
 program!
+
++------------+-----------+
+|   Top_     |  Next_    |
++------------+-----------+
+
+.. _Next: 1_intro.rst

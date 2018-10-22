@@ -1,3 +1,5 @@
+.. _Top:
+
 Making the pyboard act as a USB mouse
 =====================================
 
@@ -143,3 +145,11 @@ In the ``boot.py`` file, comment out (put a # in front of) the line with the
 
 Save your file, eject/unmount the drive, and reset the pyboard.  It is now
 back to normal operating mode.
+
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: 7_timer.rst
+.. _Next: 9_debounce.rst

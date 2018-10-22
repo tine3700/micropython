@@ -1,3 +1,5 @@
+.. _Top:
+
 The accelerometer
 =================
 
@@ -33,7 +35,7 @@ We will start by using the accelerometer to turn on a light if it is not flat.
 
     while True:
         x = accel.x()
-        if abs(x) > SENSITIVITY: 
+        if abs(x) > SENSITIVITY:
             light.on()
         else:
             light.off()
@@ -67,7 +69,7 @@ use the ``y()`` value and more LEDs we can turn the pyboard into a spirit level.
 
     while True:
         x = accel.x()
-        if x > SENSITIVITY: 
+        if x > SENSITIVITY:
             xlights[0].on()
             xlights[1].off()
         elif x < -SENSITIVITY:
@@ -78,7 +80,7 @@ use the ``y()`` value and more LEDs we can turn the pyboard into a spirit level.
             xlights[1].off()
 
         y = accel.y()
-        if y > SENSITIVITY: 
+        if y > SENSITIVITY:
             ylights[0].on()
             ylights[1].off()
         elif y < -SENSITIVITY:
@@ -96,3 +98,11 @@ created. We then proceed as before but turn on a different LED for positive and
 negative x values. We then do the same for the y direction. This isn't
 particularly sophisticated but it does the job. Run this on your pyboard and you
 should see different LEDs turning on depending on how you tilt the board.
+
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: 5_switch.rst
+.. _Next: 7_timer.rst
