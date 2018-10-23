@@ -1,3 +1,5 @@
+.. _Top:
+
 Controlling hobby servo motors
 ==============================
 
@@ -162,3 +164,10 @@ You can recalibrate the servo (change its default values) by using
 
 Of course, you would change the above values to suit your particular
 servo motor.
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: ../PARTI/9_debounce.rst
+.. _Next: 1_fading_led.rst

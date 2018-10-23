@@ -1,3 +1,5 @@
+.. _Top:
+
 Fading LEDs
 ===========
 
@@ -36,7 +38,7 @@ By examining the `Pinlayout for the pyboard lite <http://micropython.org/resourc
 
     from pyb import Timer
     from time import sleep
-    
+
     # timer 5 will be created with a frequency of 100 Hz
     tim = pyb.Timer(5, freq=100)
     tchannel = tim.channel(3, Timer.PWM, pin=pyb.Pin.board.X1, pulse_width=0)
@@ -58,16 +60,16 @@ To achieve the fading effect shown at the beginning of this tutorial, we want to
     # how much to change the pulse-width by each step
     wstep = 1500
     cur_width = min_width
-    
+
     while True:
       tchannel.pulse_width(cur_width)
-      
+
       # this determines how often we change the pulse-width. It is
       # analogous to frames-per-second
       sleep(0.01)
-    
+
       cur_width += wstep
-    
+
       if cur_width > max_width:
         cur_width = min_width
 
@@ -80,18 +82,18 @@ If we want to have a breathing effect, where the LED fades from dim to bright th
 
     while True:
       tchannel.pulse_width(cur_width)
-    
+
       sleep(0.01)
-    
+
       cur_width += wstep
-    
+
       if cur_width > max_width:
         cur_width = max_width
         wstep *= -1
       elif cur_width < min_width:
         cur_width = min_width
         wstep *= -1
-        
+
 First Exercise
 ----------------
 How would you change the code, if you want to use Pin ``X2`` for this exercise? Which channel would you need to change?
@@ -101,3 +103,10 @@ Advanced Exercise
 
 You may have noticed that the LED brightness seems to fade slowly, but increases quickly. This is because our eyes interprets brightness logarithmically (`Weber's Law <http://www.telescope-optics.net/eye_intensity_response.htm>`_
 ), while the LED's brightness changes linearly, that is by the same amount each time. How do you solve this problem? (Hint: what is the opposite of the logarithmic function?)
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: 0_servos.rst
+.. _Next: 2_LCD160CRv11.rst
