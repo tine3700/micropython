@@ -1,3 +1,5 @@
+.. _Top:
+
 The LCD160CR skin
 =================
 
@@ -81,7 +83,7 @@ To erase the screen and draw a line, try
     lcd.set_pen(lcd.rgb(255, 0, 0), lcd.rgb(64, 64, 128))
     lcd.erase()
     lcd.line(10, 10, 50, 80)
-    
+
 Task: How would you change the colour of the line? How you place the line at another place?
 
 The next example draws random rectangles on the screen.  You can copy-and-paste it
@@ -96,7 +98,7 @@ once you have pasted the text.
         bg = lcd.rgb(randint(0, 128), randint(0, 128), randint(0, 128))
         lcd.set_pen(fg, bg)
         lcd.rect(randint(0, lcd.w), randint(0, lcd.h), randint(10, 40), randint(10, 40))
-        
+
 **Task:** How would you draw two rectangles on the screen? Try to give them different colours.
 
 Using the touch sensor
@@ -125,7 +127,7 @@ third entries in the tuple being the x and y coordinates of the current (or most
 recent) touch.
 
 Playing around with setup commands
------------------------
+----------------------------------
 
 Let's see how easy it is to write something on the screen
 
@@ -175,3 +177,10 @@ is for the display to have power, ground and the power/enable pin driven high.
 Then any characters on the display's UART input will be printed to the screen.
 You can adjust the UART baudrate from the default of 115200 using the
 `set_uart_baudrate` method.
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: 1_fading_led.rst
+.. _Next: ../PARTIII/1_SensorTile_HDC2080.rst

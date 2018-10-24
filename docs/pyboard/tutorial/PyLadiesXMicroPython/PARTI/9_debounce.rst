@@ -1,3 +1,5 @@
+.. _Top:
+
 Debouncing a pin input
 ======================
 
@@ -39,3 +41,11 @@ Use it something like this
     while True:
         wait_pin_change(pin_x1)
         pyb.LED(4).toggle()
+
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: 8_usb_mouse.rst
+.. _Next: ../PARTII/0_servos.rst

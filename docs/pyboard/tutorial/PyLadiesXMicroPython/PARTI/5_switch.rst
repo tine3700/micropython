@@ -1,3 +1,5 @@
+.. _Top:
+
 The Switch, callbacks and interrupts
 ====================================
 
@@ -119,3 +121,10 @@ The above sequence of events gets a bit more complicated when multiple
 interrupts occur at the same time.  In that case, the interrupt with the
 highest priority goes first, then the others in order of their priority.
 The switch interrupt is set at the lowest priority.
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: 4_LED.rst
+.. _Next: 6_accel.rst

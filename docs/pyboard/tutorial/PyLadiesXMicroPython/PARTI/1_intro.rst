@@ -1,3 +1,5 @@
+.. _Top:
+
 Introduction to the pyboard
 ===========================
 
@@ -52,3 +54,10 @@ ground to GND.  There is no polarity protection on the pyboard so you
 must be careful when connecting anything to VIN.**
 
 **The input voltage must be between 3.6V and 10V.**
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: 0_script.rst
+.. _Next: 2_reset.rst

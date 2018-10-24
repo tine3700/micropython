@@ -1,3 +1,5 @@
+.. _Top:
+
 The Timers
 ==========
 
@@ -122,3 +124,10 @@ and then perform your timing::
     ... do some stuff ...
 
     >>> end_micros = micros.counter()
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: 6_accel.rst
+.. _Next: 8_usb_mouse.rst

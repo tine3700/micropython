@@ -1,3 +1,5 @@
+.. _Top:
+
 Turning on LEDs and basic Python concepts
 =========================================
 
@@ -21,7 +23,7 @@ This is all very well but we would like this process to be automated. Open the f
         pyb.delay(1000)
 
 When you save, the red light on the pyboard should turn on for about a second. To run the script, do a soft reset (CTRL-D). The pyboard will then restart and you should see a green light continuously flashing on and off. Success, the first step on your path to building an army of evil robots! When you are bored of the annoying flashing light then press CTRL-C at your terminal to stop it running.
- 
+
 So what does this code do? First we need some terminology. Python is an object-oriented language, almost everything in python is a *class* and when you create an instance of a class you get an *object*. Classes have *methods* associated to them. A method (also called a member function) is used to interact with or control the object.
 
 The first line of code creates an LED object which we have then called led. When we create the object, it takes a single parameter which must be between 1 and 4, corresponding to the 4 LEDs on the board. The pyb.LED class has three important member functions that we will use: on(), off() and toggle(). The other function that we use is pyb.delay() this simply waits for a given time in miliseconds. Once we have created the LED object, the statement while True: creates an infinite loop which toggles the led between on and off and waits for 1 second.
@@ -57,7 +59,7 @@ One problem you might find is that if you stop the script and then start it agai
 .. code-block:: python
 
     leds = [pyb.LED(i) for i in range(1,5)]
-    for l in leds: 
+    for l in leds:
         l.off()
 
     n = 0
@@ -85,3 +87,10 @@ The yellow and blue LEDs are special. As well as turning them on and off, you ca
         pyb.delay(20)
 
 You can call intensity() on LEDs 1 and 2 but they can only be off or on. 0 sets them off and any other number up to 255 turns them on.
+
++------------+------------+-----------+
+|   Back_    |   Top_     |  Next_    |
++------------+------------+-----------+
+
+.. _Back: 3_repl.rst
+.. _Next: 5_switch.rst

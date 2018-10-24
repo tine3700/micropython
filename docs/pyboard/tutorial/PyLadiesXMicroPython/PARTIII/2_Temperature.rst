@@ -1,5 +1,7 @@
+.. _Top:
+
 Building your own Temperature and Humidity Control Device
----------------------
+------------------------------------------------------------
 
 
 For our next little task, we would like to combine the LCD160CR and the Sensor adapter board.
@@ -7,7 +9,7 @@ After exploring the temperature and humidity sensor and runing your first test s
 different hardware components. Now we want to build our own Temperature and Humidity meassurement device. Of course, you can buy such devices for a few Euros, but where is the fun in that?
 
 Hardware needed for this task:
-----------------
+------------------------------
 
 * pyboard lite with accelerometer and headers
 * SensorTile Temperature Sensor HDC2080 on break out board
@@ -74,3 +76,9 @@ Think about how you would like to log your data in an infinite loop. There are t
 	def log():
 	for i in range(20):
 	    writeLog(rtc,hdc_temp(),hdc_hum())
+
++------------+------------+
+|   Back_    |   Top_     |
++------------+------------+
+
+.. _Back: 1_SensorTile_HDC2080.rst
