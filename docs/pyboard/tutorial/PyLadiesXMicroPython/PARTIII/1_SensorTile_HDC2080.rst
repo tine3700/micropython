@@ -30,3 +30,27 @@ The first entry is the time since the pyboard was started in ms. Second entry is
 
 .. _Back: ../PARTII/2_LCD160CRv11.rst
 .. _Next: 2_Temperature.rst
+
+Accessing the features of the SensorTile
+-------------------------------
+
+beeping:
+
+Buzzer
+
+.. code-block:: python
+    # freq = frequency dur = duration
+    s.beep(freq=100, dur=200)
+
+LED:
+
+.. code-block:: python
+    s.led(color=1)
+
+Accessing the sensor data:
+.. code-block:: python
+    # temperature and humidity
+    s.hdc()
+    # light intensity
+    s.opt()
+
