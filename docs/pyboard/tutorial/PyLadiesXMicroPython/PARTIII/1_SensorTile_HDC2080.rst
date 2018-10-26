@@ -38,7 +38,7 @@ The SensorTile has an RGB (Red, Green, Blue) LED. To play with this LED you can 
 	s.led(color=2) #for green
 	s.led(color=3) #for blue
 	s.led(color=7) #for white
-	s.led(color=0) #turns of the LED
+	s.led(color=0) #turns off the LED
 
 After making some light, we want to add some different kinds of sound. To use the Buzzer on the SensorTile type:
 
