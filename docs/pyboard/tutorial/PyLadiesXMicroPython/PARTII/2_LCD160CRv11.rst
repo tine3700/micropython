@@ -140,7 +140,7 @@ Let's see how easy it is to write something on the screen
     lcd.set_pos(0, 0)
     lcd.set_text_color(lcd.rgb(255, 0, 0), lcd.rgb(0, 0, 0))
     lcd.set_font(1)
-    lcd.write('Hello pyladies Berin!')
+    lcd.write('Hello pyladies Berlin!')
     print('touch:', lcd.get_touch())
 
 **Task**: How would you change the orientation of the Display? How can you change the font size and font colour?
