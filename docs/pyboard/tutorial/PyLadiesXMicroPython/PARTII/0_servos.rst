@@ -38,6 +38,13 @@ using
 
     servo1 = pyb.Servo(1)
 
+There are several types of servos. Some of them are rotating all the time, but with different speed (even if the speed is equal to zero, they are checking it all the time), and some of them only rotate to some angle and then stop until you ask them to rotate to some other angle.
+
+You need to try instructions from next two sections to understand which type of servo do you have.
+
+Rotating servo to the specific angle
+------------------------------------
+
 To change the angle of the servo use the ``angle`` method
 
 .. code-block:: python
