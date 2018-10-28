@@ -111,6 +111,7 @@ Congratulations!  You have written and run your very first MicroPython
 program!
 
 Here is a reference book for MicroPython:
+
 .. image:: /docs/pyboard/tutorial/img/MicroPython_textbook.jpg
       
 
